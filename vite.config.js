@@ -3,6 +3,20 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    resolve: { alias: { '@': '/src' } },
-  plugins: [vue()]
+  plugins: [vue()],
+  define: { 'process.env': {} },
+  resolve: { alias: { '@': '/src' } },
+  /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
+  resolve: {
+    extensions: [
+      '.js',
+      '.json',
+      '.jsx',
+      '.mjs',
+      '.ts',
+      '.tsx',
+      '.vue',
+    ]
+  },
+  */
 })
