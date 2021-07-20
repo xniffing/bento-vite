@@ -150,3 +150,11 @@ export default {
   }),
 }
 </script>
+
+
+<style scoped>
+a {
+  color: rgb(176, 124, 212);
+  text-decoration: inherit;
+}
+</style>
