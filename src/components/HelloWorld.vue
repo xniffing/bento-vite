@@ -93,12 +93,12 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import logo from '../assets/logo.svg'
 
-export default {
+export default defineComponent({
   name: 'HelloWorld',
-
   data: () => ({
     ecosystem: [
       {
@@ -146,9 +146,9 @@ export default {
         text: 'Frequently Asked Questions',
         href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
       },
-    ],
+  ],
   }),
-}
+})
 </script>
 
 
